@@ -2,10 +2,10 @@
   "name": "expediaapi",
   "version": "0.0.1",
   "description": "simple wrapper around the expedia EAN api",
-  "main": "./lib/expedia.js",
+  "main": "lib/expedia.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Sdedelbrock/node-expedia-api.git"
+    "url": "https://github.com/Sdedelbrock/node-expedia-api.git"
   },
   "author": "Shiem Edelbrock",
   "license": "WTFPL",
