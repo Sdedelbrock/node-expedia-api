@@ -1,0 +1,17 @@
+{
+  "name": "expediaapi",
+  "version": "0.0.1",
+  "description": "simple wrapper around the expedia EAN api",
+  "main": "./lib/expedia.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dmonty/dmonty_mm.git"
+  },
+  "author": "Shiem Edelbrock",
+  "license": "WTFPL",
+  "dependencies": {
+    "cli-color": "~0.2.2",
+    "request": "~2.27.0",
+    "jstoxml": "~0.2.2"
+  }
+}
