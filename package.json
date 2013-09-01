@@ -13,5 +13,8 @@
     "cli-color": "~0.2.2",
     "request": "~2.27.0",
     "jstoxml": "~0.2.2"
+  },
+  "engines": {
+      "node": "*"
   }
 }
