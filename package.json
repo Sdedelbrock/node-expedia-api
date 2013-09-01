@@ -5,7 +5,7 @@
   "main": "./lib/expedia.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/dmonty/dmonty_mm.git"
+    "url": "git@github.com:Sdedelbrock/node-expedia-api.git"
   },
   "author": "Shiem Edelbrock",
   "license": "WTFPL",
