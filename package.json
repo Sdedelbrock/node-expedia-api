@@ -1,6 +1,6 @@
 {
     "name": "expedia",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "simple wrapper around the expedia EAN api",
     "main": "lib/expedia.js",
 
