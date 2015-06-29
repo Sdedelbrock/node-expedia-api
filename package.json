@@ -1,15 +1,16 @@
 {
-    "name": "expedia",
-    "version": "0.0.3",
+    "name": "yfb-expedia",
+    "version": "0.0.5",
     "description": "simple wrapper around the expedia EAN api",
     "main": "lib/expedia.js",
 
     "repository": {
         "type": "git",
-        "url": "https://github.com/Sdedelbrock/node-expedia-api.git"
+        "url": "https://github.com/chris-verclytte/node-expedia-api.git"
     },
-    "url" : "https://github.com/Sdedelbrock/node-expedia-api",
-    "author": "Shiem Edelbrock",
+    "url" : "https://github.com/chris-verclytte/node-expedia-api",
+    "author": "Christophe Verclytte <christophe.verclytte@yourfreebooking.com>",
+    "contributors": "Shiem Edelbrock",
     "license": "WTFPL",
     "dependencies": {
         "cli-color": "~0.2.2",

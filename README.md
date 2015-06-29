@@ -1,4 +1,6 @@
-[![NPM](https://nodei.co/npm/expedia.png)](https://nodei.co/npm/expedia/)
+[![NPM](https://nodei.co/npm/yfb-expedia.png)](https://nodei.co/npm/yfb-expedia/)
+
+This module is a fork of [expedia](https://www.npmjs.com/package/expedia) module that is not maintained anymore.
 
 ##Expedia API
 Small client interface for the [Expedia EAN api](http://developer.ean.com/).  Provides an interface for the following methods:  
@@ -19,6 +21,7 @@ Install with npm:
 
 ##Initialization
 Usage requires a Expedia Api key and CID.  For development use you can use the CIN 55505.  You can obtain your api key from the [Expedia EAN api documentation](http://developer.ean.com/).
+sendAsREST parameter allow you to choose if you want to send your data in XML or REST format (forgetting the param sets format to XML).
 
 ```javascript
  var options = {
@@ -28,7 +31,7 @@ Usage requires a Expedia Api key and CID.  For development use you can use the C
         currencyCode :"USD"  // optional defaults to USD
     };
 
-var expedia = require("expedia")(options);
+var expedia = require("expedia")(options, sendAsREST);
 ```
 
 ##Usage
