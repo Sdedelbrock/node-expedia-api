@@ -1,23 +1,22 @@
 {
-    "name": "yfb-expedia",
-    "version": "0.1.1",
-    "description": "simple wrapper around the expedia EAN api",
-    "main": "lib/expedia.js",
-
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/chris-verclytte/node-expedia-api.git"
-    },
-    "url" : "https://github.com/chris-verclytte/node-expedia-api",
-    "author": "Christophe Verclytte <christophe.verclytte@yourfreebooking.com>",
-    "contributors": "Shiem Edelbrock",
-    "license": "WTFPL",
-    "dependencies": {
-        "cli-color": "~0.2.2",
-        "request": "~2.27.0",
-        "jstoxml": "~0.2.2"
-    },
-    "engines": {
-        "node": "*"
-    }
+  "name": "yfb-expedia",
+  "version": "1.0.0",
+  "description": "simple wrapper around the expedia EAN api",
+  "main": "lib/expedia.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chris-verclytte/node-expedia-api.git"
+  },
+  "url": "https://github.com/chris-verclytte/node-expedia-api",
+  "author": "Christophe Verclytte <christophe.verclytte@yourfreebooking.com>",
+  "contributors": "Shiem Edelbrock",
+  "license": "WTFPL",
+  "dependencies": {
+    "cli-color": "~0.2.2",
+    "request": "~2.27.0",
+    "jstoxml": "~0.2.2"
+  },
+  "engines": {
+    "node": "*"
+  }
 }
