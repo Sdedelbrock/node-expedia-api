@@ -26,17 +26,16 @@ Install with npm:
 Usage requires an Expedia Api key and CID.  For development use you can use the CID 55505.  You can obtain your api key from the [Expedia EAN api documentation](http://developer.ean.com/).
 
 ```javascript
- var options = {
-        cid     : "YOUR CID",
-        apiKey  : "YOUR EAN API KEY",
-        locale  : "en_US",  // optional defaults to en_US
-        currencyCode :"USD"  // optional defaults to USD
+var options = {
+        cid: 'YOUR CID',
+        apiKey: 'YOUR EAN API KEY',
+        secret: 'YOUR SECRET',
+        locale: 'en_US',  // optional defaults to en_US
+        currencyCode: 'USD'  // optional defaults to USD
     };
 
-var expedia = require("expedia")(options, sendAsREST);
+var expedia = require("expedia")(options);
 ```
-sendAsREST parameter allows you to choose if you want to send your data in XML or REST format (forgetting the param sets format to XML).
-Note that usage of XML is going to be deprecated by Expedia.
 
 ## Usage
 
@@ -44,17 +43,17 @@ Expedia requires that you pass in a customer ip, unique session identifier, and 
 
 ```javascript
 var options = {
-  "customerSessionId" : "thisisauniqueID",
-  "customerIpAddress" : "127.0.0.1",
-  "customerUserAgent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko)",
-  "LocationInfoRequest": {
-    "locale": "en_US",
-    "destinationString": "Seattle, WA"
-  }
+    customerSessionId: 'thisisauniqueID',
+    customerIpAddress: '127.0.0.1',
+    customerUserAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko)',
+    city: 'Bellevue',
+    stateProvinceCode: 'WA',
+    countryCode: 'US',
+    postalCode: '98004'
 };
 
-expedia.geoSearch(options, function(err, res){
-    if(err)throw new Error(err);
+expedia.geoSearch(options, function(err, res) {
+    if (err) { throw new Error(err); }
     console.log(res);
 });
 ```
