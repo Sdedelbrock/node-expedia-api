@@ -13,7 +13,6 @@
   "license": "WTFPL",
   "dependencies": {
     "cli-color": "~0.2.2",
-    "jstoxml": "~0.2.2",
     "lodash": "^4.0.0",
     "request": "~2.27.0"
   },
