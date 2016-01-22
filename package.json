@@ -14,7 +14,8 @@
   "dependencies": {
     "cli-color": "~0.2.2",
     "lodash": "^4.0.0",
-    "request": "~2.27.0"
+    "request": "~2.27.0",
+    "request-promise": "^2.0.0"
   },
   "engines": {
     "node": "*"
