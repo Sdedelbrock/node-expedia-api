@@ -1,4 +1,4 @@
-[![NPM](https://nodei.co/npm/yfb-expedia.png)](https://nodei.co/npm/yfb-expedia/)
+[![NPM](https://nodei.co/npm/node-expedia-api.png)](https://nodei.co/npm/node-expedia-api/)
 
 This module is a fork of [expedia](https://www.npmjs.com/package/expedia) module that is not maintained anymore.
 
