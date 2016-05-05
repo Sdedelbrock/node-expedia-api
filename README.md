@@ -23,7 +23,7 @@ Provides an interface for the following methods:
 Install with npm:
 
 ```
-npm install node-expedia-api
+npm install --save node-expedia-api
 ```
 
 # Initialization

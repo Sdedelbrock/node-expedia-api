@@ -5,11 +5,11 @@
   "main": "lib/expedia.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chris-verclytte/node-expedia-api.git"
+    "url": "https://github.com/startsat60/node-expedia-api.git.git"
   },
-  "url": "https://github.com/chris-verclytte/node-expedia-api",
+  "url": "https://github.com/startsat60/node-expedia-api",
   "author": "Christophe Verclytte <christophe.verclytte@yourfreebooking.com>",
-  "contributors": "Shiem Edelbrock",
+  "contributors": "Shiem Edelbrock, Emanuele Tonello",
   "license": "WTFPL",
   "dependencies": {
     "cli-color": "^1.1.0",
