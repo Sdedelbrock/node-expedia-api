@@ -2,28 +2,33 @@
 
 This module is a fork of [expedia](https://www.npmjs.com/package/expedia) module that is not maintained anymore.
 
-## Expedia API
+# Expedia API
 
-Small client interface for the [Expedia EAN api](http://developer.ean.com/).  Provides an interface for the following methods:  
-- **Hotel List** Retrieve a list of hotels by location or a list of specific hotel ids  
-- **Hotel Information**  Retrieve detailed information about a hotel from a hotel id
-- **Room Availability** Retrieve all available rooms for a specific hotel that accommodate the provided guest count and any other criteria.  
-- **Room Images** Retrieve a list of room images for a specific hotelId organized by room type  
-- **Payment Types** Retrieve credit card types compatible with current request settings  
-- **Book Reservation** Request a reservation for the specified room(s).   
-- **Itinerary Request** Retrieve an existing itinerary's status and details, confirm the status of a previously requested booking, or retrieve a list of itineraries from a specified date span.  
-- **Cancel Reservation** Cancel an existing reservation for a single room.  
-- **Ping Request** Send a ping request to expedia API servers to determine if service is available in the event of a suspected outage or ISP issue, or to obtain EAN's Unix server time when troubleshooting issues with signature authentication.  
-- **Geo Functions** Obtain location data such as a specific destinationId, latitude/longitude coordinates, and the number of active properties available within the location.  
+Small client interface for the [Expedia EAN api](http://developer.ean.com/).<br>
+Provides an interface for the following methods:
 
-## Installation
+- **Hotel List** Retrieve a list of hotels by location or a list of specific hotel ids
+- **Hotel Information** Retrieve detailed information about a hotel from a hotel id
+- **Room Availability** Retrieve all available rooms for a specific hotel that accommodate the provided guest count and any other criteria.
+- **Room Images** Retrieve a list of room images for a specific hotelId organized by room type
+- **Payment Types** Retrieve credit card types compatible with current request settings
+- **Book Reservation** Request a reservation for the specified room(s).
+- **Itinerary Request** Retrieve an existing itinerary's status and details, confirm the status of a previously requested booking, or retrieve a list of itineraries from a specified date span.
+- **Cancel Reservation** Cancel an existing reservation for a single room.
+- **Ping Request** Send a ping request to expedia API servers to determine if service is available in the event of a suspected outage or ISP issue, or to obtain EAN's Unix server time when troubleshooting issues with signature authentication.
+- **Geo Functions** Obtain location data such as a specific destinationId, latitude/longitude coordinates, and the number of active properties available within the location.
 
-Install with npm:  
-```npm install yfb-expedia```
+# Installation
 
-## Initialization
+Install with npm:
 
-Usage requires an Expedia Api key and CID.  For development use you can use the CID 55505.  You can obtain your api key from the [Expedia EAN api documentation](http://developer.ean.com/).
+```
+npm install node-expedia-api
+```
+
+# Initialization
+
+Usage requires an Expedia Api key and CID. For development use you can use the CID 55505\. You can obtain your api key from the [Expedia EAN api documentation](http://developer.ean.com/).
 
 ```javascript
 var options = {
@@ -37,9 +42,9 @@ var options = {
 var expedia = require("expedia")(options);
 ```
 
-## Usage
+# Usage
 
-Expedia requires that you pass in a customer ip, unique session identifier, and browser agent.  The remaining parameters are defined in the  [Expedia EAN api documentation](http://developer.ean.com/).  Please see the example directory for more options.
+Expedia requires that you pass in a customer ip, unique session identifier, and browser agent. The remaining parameters are defined in the [Expedia EAN api documentation](http://developer.ean.com/). Please see the example directory for more options.
 
 ```javascript
 var options = {
