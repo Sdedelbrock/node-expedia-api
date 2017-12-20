@@ -1,4 +1,4 @@
-var expedia = require("../lib/expedia")({apiKey:"cbrzfta369qwyrm9t5b8y8kf",cid:"55505"});
+var expedia = require("../lib/expedia")();
 
 // a complete list of options is available at http://developer.ean.com/docs/hotel-info/
 var options = {
@@ -13,6 +13,7 @@ var options = {
 
 expedia.hotels.info(options, function(err, res){
     if(err)throw new Error(err);
-    console.log(res);
+    console.log(JSON.stringify(res));
+    // console.log(res);
 });
 
