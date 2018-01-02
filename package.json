@@ -1,6 +1,6 @@
 {
   "name": "@travelbank/node-expedia-api",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "simple wrapper around the expedia EAN api",
   "main": "lib/expedia.js",
   "repository": {
@@ -13,8 +13,9 @@
   "license": "WTFPL",
   "dependencies": {
     "cli-color": "~0.2.2",
+    "jstoxml": "~0.2.2",
     "request": "~2.27.0",
-    "jstoxml": "~0.2.2"
+    "request-promise": "^4.2.2"
   },
   "engines": {
     "node": "*"

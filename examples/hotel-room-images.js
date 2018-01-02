@@ -10,8 +10,6 @@ var options = {
   }
 };
 
-expedia.hotels.roomImages(options, function(err, res){
-    if(err)throw new Error(err);
-    console.log(JSON.stringify(res));
-});
-
+expedia.hotels.roomImages(options)
+  .then(data => { console.log(JSON.stringify(data)); })
+  .catch(err => { console.error(err); })
