@@ -11,9 +11,6 @@ var options = {
   }
 };
 
-expedia.hotels.info(options, function(err, res){
-    if(err)throw new Error(err);
-    console.log(JSON.stringify(res));
-    // console.log(res);
-});
-
+expedia.hotels.info(options)
+  .then(data => { console.log(JSON.stringify(data)); })
+  .catch(err => { console.error(err); })
