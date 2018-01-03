@@ -1,16 +1,23 @@
 {
   "name": "@travelbank/node-expedia-api",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "simple wrapper around the expedia EAN api",
   "main": "lib/expedia.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/chris-verclytte/node-expedia-api.git"
   },
+  "scripts": {
+    "changelog": "conventional-changelog -s -p angular -i CHANGELOG.md",
+    "prepare-release": "curl -sL https://raw.githubusercontent.com/travelbank/misc/master/scripts/prepare_release.sh | bash -s"
+  },
   "url": "https://github.com/chris-verclytte/node-expedia-api",
   "author": "Christophe Verclytte <christophe.verclytte@yourfreebooking.com>",
   "contributors": "Shiem Edelbrock",
   "license": "WTFPL",
+  "devDependencies": {
+    "conventional-changelog-cli": "^1.2.0"
+  },
   "dependencies": {
     "cli-color": "~0.2.2",
     "jstoxml": "~0.2.2",
