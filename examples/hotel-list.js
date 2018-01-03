@@ -4,11 +4,8 @@ var expedia = require("../lib/expedia")();
 var options = {
   "customerIpAddress" : "127.0.0.1",
   "customerUserAgent" : "Node.js",
-  "city": "Seattle",
-  "stateProvinceCode": "WA",
   "latitude": 47.6062,
   "longitude": -122.332,
-  "countryCode": "US",
   "arrivalDate": "12/30/2018",
   "departureDate": "12/31/2018",
   "searchRadius": 15,
