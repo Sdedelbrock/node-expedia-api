@@ -4,17 +4,17 @@ var expedia = require("../lib/expedia")();
 var options = {
   "customerIpAddress" : "127.0.0.1",
   "customerUserAgent" : "Node.js",
-  "HotelListRequest": {
-    "city": "Seattle",
-    "stateProvinceCode": "WA",
-    "countryCode": "US",
-    "arrivalDate": "12/30/2018",
-    "departureDate": "12/31/2018",
-    "RoomGroup": {
-      "Room": { "numberOfAdults": "2" }
-    },
-    "numberOfResults": "20"
-  }
+  "city": "Seattle",
+  "stateProvinceCode": "WA",
+  "latitude": 47.6062,
+  "longitude": -122.332,
+  "countryCode": "US",
+  "arrivalDate": "12/30/2018",
+  "departureDate": "12/31/2018",
+  "searchRadius": 15,
+  "searchRadiusUnit": "MI",
+  "room1": 2,
+  "numberOfResults": "20"
 };
 
 expedia.hotels.list(options)
