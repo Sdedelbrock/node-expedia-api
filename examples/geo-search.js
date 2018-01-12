@@ -12,8 +12,6 @@ var options = {
   }
 };
 
-expedia.geoSearch(options, function(err, res){
-    if(err)throw new Error(err);
-    console.log(res);
-});
-
+expedia.geoSearch(options)
+  .then(data => { console.log(JSON.stringify(data)); })
+  .catch(err => { console.error(err); })

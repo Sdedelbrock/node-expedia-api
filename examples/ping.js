@@ -8,8 +8,6 @@ var options = {
   "PingRequest": { "echo": "This message should be echoed back to you." }
 };
 
-expedia.ping(options, function(err, res){
-    if(err)throw new Error(err);
-    console.log(res);
-});
-
+expedia.ping(options)
+  .then(data => { console.log(JSON.stringify(data)); })
+  .catch(err => { console.error(err); })

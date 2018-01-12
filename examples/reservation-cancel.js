@@ -13,8 +13,6 @@ var options = {
   }
 };
 
-expedia.reservation.cancel(options, function(err, res){
-    if(err)throw new Error(err);
-    console.log(res);
-});
-
+expedia.reservation.cancel(options)
+  .then(data => { console.log(JSON.stringify(data)); })
+  .catch(err => { console.error(err); })
